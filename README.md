@@ -7,7 +7,7 @@ TL; DR: Linear SDE version of Attention blocks applied to Transformers
 ```
 python exp.py --data=cifar10 --n_block=4 --dim_emb=128 --block_type=mhsde --epochs=100 --save=True
 ```
-In particular, the ```--block_type``` option support the following models:
+In particular, the ViT model contains attention blocks, where ```--block_type``` option specifies the type of attention. Now the code supports the following block types:
 
 ``` nn ```: just simple MLP.
 
@@ -31,5 +31,7 @@ For other configs available see ```exp.py```.
 [Archambeau et al., NIPS 2007 "Variational Inference for Diffusion Processes"](https://papers.nips.cc/paper_files/paper/2007/hash/818f4654ed39a1c147d1e51a00ffb4cb-Abstract.html)
 
 [Adam et al., AISTATS 2020 "Doubly Sparse Variational Gaussian Processes"](http://proceedings.mlr.press/v108/adam20a.html)
+
+[Dosovitskiy et al., ICLR 2021 "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale"](https://openreview.net/forum?id=YicbFdNTTy)
 
 [Chen and Li, ICLR 2023 "Calibrating Transformers via Sparse Gaussian Processes"](https://openreview.net/forum?id=jPVAFXHlbL)
